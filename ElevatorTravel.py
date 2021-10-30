@@ -1,10 +1,10 @@
 import pymysql
 import time
 
-dbUrl = "elevator-db.cdpfvc1hzmbi.ap-northeast-2.rds.amazonaws.com"
+dbUrl = "url"
 dbPort = 3306
-dbId = "admin"
-dbPwd = "kongys11"
+dbId = "id"
+dbPwd = "pwd"
 
 request_floors = set()
 now_floor = 1
