@@ -13,7 +13,7 @@ dbPwd = "pwd"
 def getColumnCount():
     con = pymysql.connect(host=dbUrl, port=dbPort, user=dbId, password=dbPwd, db="elevator")
     cursor = con.cursor()
-    sql = "SELECT COUNT(*) FROM infoma"
+    sql = "SELECT COUNT(*) FROM INFO"
     cursor.execute(sql)
 
     for list in cursor:
@@ -28,7 +28,7 @@ def getColumnCount():
 def getResentRow():
     con = pymysql.connect(host=dbUrl, port=dbPort, user=dbId, password=dbPwd, db="elevator")
     cursor = con.cursor()
-    sql = "SELECT UNAME,FLOOR,FILENAME FROM infoma ORDER BY REGDATE DESC LIMIT 1"
+    sql = "SELECT UNAME,FLOOR,FILENAME FROM INFO ORDER BY REGDATE DESC LIMIT 1"
     cursor.execute(sql)
 
     for list in cursor:
